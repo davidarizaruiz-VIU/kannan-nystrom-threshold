@@ -5,6 +5,7 @@ Reference implementation and experimental code for the manuscript
 > **Kannan-stable Picard–Nyström iteration for discontinuous threshold integral equations: theory, computation, and applications**
 > David Ariza-Ruiz. Submitted to the *Journal of Computational and Applied Mathematics* (Elsevier), 2026.
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19814083.svg)](https://doi.org/10.5281/zenodo.19814083)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python ≥3.10](https://img.shields.io/badge/python-%E2%89%A53.10-blue.svg)](https://www.python.org/)
 [![Status: companion code](https://img.shields.io/badge/status-paper%20companion-green)](#)
@@ -129,14 +130,18 @@ Both the software and the paper should be cited. A `CITATION.cff` is provided so
 
 @software{ArizaRuiz2026KannanNystromCode,
   author       = {David Ariza-Ruiz},
-  title        = {kannan-nystrom-threshold: reference implementation},
+  title        = {kannan-nystrom-threshold: reference implementation
+                  of the Kannan-stable {Picard}--{Nystr\"om} iteration
+                  for discontinuous threshold integral equations},
   year         = {2026},
   version      = {v1.0.0},
-  url          = {https://github.com/davidarizaruiz-VIU/kannan-nystrom-threshold}
+  publisher    = {Zenodo},
+  doi          = {10.5281/zenodo.19814083},
+  url          = {https://doi.org/10.5281/zenodo.19814083}
 }
 ```
 
-A persistent DOI will be issued by Zenodo at the v1.0.0 release tag and added to this section.
+The DOI `10.5281/zenodo.19814083` is the *concept DOI* that always resolves to the latest version; the *version DOI* `10.5281/zenodo.19814084` resolves specifically to the v1.0.0 release accompanying the JCAM submission. The release is additionally indexed in OpenAIRE and archived in Software Heritage.
 
 ## License
 

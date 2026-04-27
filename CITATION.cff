@@ -6,7 +6,15 @@ type: software
 version: 1.0.0
 date-released: 2026-04-27
 license: MIT
-url: "https://github.com/davidarizaruiz-VIU/kannan-nystrom-threshold"
+doi: "10.5281/zenodo.19814083"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.19814083"
+    description: "Concept DOI (resolves to the latest version)."
+  - type: doi
+    value: "10.5281/zenodo.19814084"
+    description: "Version DOI of v1.0.0 (this release)."
+url: "https://doi.org/10.5281/zenodo.19814083"
 repository-code: "https://github.com/davidarizaruiz-VIU/kannan-nystrom-threshold"
 authors:
   - family-names: "Ariza-Ruiz"

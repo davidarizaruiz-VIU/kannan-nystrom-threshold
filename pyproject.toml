@@ -1,0 +1,76 @@
+[build-system]
+requires = ["hatchling>=1.21"]
+build-backend = "hatchling.build"
+
+[project]
+name = "kannan-nystrom"
+version = "1.0.0"
+description = "Reference implementation of the Kannan-stable Picard-Nystrom iteration for discontinuous threshold integral equations"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [
+    { name = "David Ariza-Ruiz", email = "davidarizaruiz@gmail.com" },
+]
+keywords = [
+    "fixed-point-iteration",
+    "Kannan-mappings",
+    "Nystrom-method",
+    "Fredholm-integral-equations",
+    "discontinuous-nonlinearity",
+    "threshold-operators",
+    "Filippov-regularisation",
+    "bistability",
+    "numerical-analysis",
+    "scientific-computing",
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Education",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Topic :: Scientific/Engineering :: Mathematics",
+]
+dependencies = [
+    "numpy>=1.26,<2.3",
+    "scipy>=1.13,<1.16",
+    "matplotlib>=3.8,<3.11",
+    "pandas>=2.0,<2.4",
+]
+
+[project.urls]
+Homepage      = "https://github.com/davidarizaruiz-VIU/kannan-nystrom-threshold"
+Repository    = "https://github.com/davidarizaruiz-VIU/kannan-nystrom-threshold"
+Changelog     = "https://github.com/davidarizaruiz-VIU/kannan-nystrom-threshold/blob/main/CHANGELOG.md"
+Issues        = "https://github.com/davidarizaruiz-VIU/kannan-nystrom-threshold/issues"
+"Concept DOI" = "https://doi.org/10.5281/zenodo.19814083"
+"v1.0.0 DOI"  = "https://doi.org/10.5281/zenodo.19814084"
+
+[tool.hatch.build.targets.wheel]
+include = [
+    "picard_nystrom.py",
+    "picard_nystrom_2d.py",
+    "kannan_nystrom.py",
+]
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "picard_nystrom.py",
+    "picard_nystrom_2d.py",
+    "kannan_nystrom.py",
+    "README.md",
+    "LICENSE",
+    "CITATION.cff",
+    "CHANGELOG.md",
+    "requirements.txt",
+    "pyproject.toml",
+    "run_*.py",
+    "data/",
+]

@@ -5,6 +5,7 @@ Reference implementation and experimental code for the manuscript
 > **Kannan-stable Picard–Nyström iteration for discontinuous threshold integral equations: theory, computation, and applications**
 > David Ariza-Ruiz. Submitted to the *Journal of Computational and Applied Mathematics* (Elsevier), 2026.
 
+[![PyPI](https://img.shields.io/pypi/v/kannan-nystrom.svg)](https://pypi.org/project/kannan-nystrom/)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19814083.svg)](https://doi.org/10.5281/zenodo.19814083)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python ≥3.10](https://img.shields.io/badge/python-%E2%89%A53.10-blue.svg)](https://www.python.org/)
@@ -28,15 +29,29 @@ The library implements:
 
 ## Installation
 
-The library targets a clean scientific-Python stack:
+The recommended route is to install the published package from PyPI:
+
+```bash
+pip install kannan-nystrom
+```
+
+This pulls in a pinned scientific-Python stack (`numpy`, `scipy`, `matplotlib`, `pandas`) and exposes both API forms
+
+```python
+from kannan_nystrom import gauss_legendre_01, NystromSystem, picard_nystrom   # ergonomic
+from picard_nystrom import gauss_legendre_01, NystromSystem, picard_nystrom   # paper-canonical
+```
+
+interchangeably -- the two import paths resolve to the same objects.
+
+To work with the manuscript's reproducibility map (driver scripts, datasets, generated figures), clone the repository instead:
 
 ```bash
 git clone https://github.com/davidarizaruiz-VIU/kannan-nystrom-threshold.git
 cd kannan-nystrom-threshold
 python3 -m pip install -r requirements.txt
+python3 run_convergence_sweep.py     # any driver script
 ```
-
-A pip-installable package (`kannan-nystrom`) is planned for the v1.1 release.
 
 ## Quick start
 

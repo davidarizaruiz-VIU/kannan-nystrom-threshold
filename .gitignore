@@ -21,6 +21,10 @@ wheels/
 *.egg
 MANIFEST
 
+# --- Hatch / hatchling build artefacts -----------------------------------
+.hatch/
+.hatch_build/
+
 # --- Virtual environments ------------------------------------------------
 .venv/
 venv/

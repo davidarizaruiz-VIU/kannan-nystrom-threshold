@@ -1,0 +1,11 @@
+# Pinned scientific-Python stack used for the manuscript benchmarks.
+# Reference hardware: Apple M3 (8 GB unified memory), macOS Sequoia 15.6.1,
+# Python 3.12, NumPy linked against the Accelerate BLAS framework.
+#
+# The lower bounds match the versions actually used; the upper bounds avoid
+# silent breakage on future major releases.
+
+numpy>=1.26,<2.3
+scipy>=1.13,<1.16
+matplotlib>=3.8,<3.11
+pandas>=2.0,<2.4

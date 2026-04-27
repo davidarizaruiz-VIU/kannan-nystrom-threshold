@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+message: "If you use this software or its outputs, please cite both the software (this file) and the accompanying paper (preferred-citation)."
+title: "kannan-nystrom-threshold: reference implementation of the Kannan-stable Picard-Nystrom iteration for discontinuous threshold integral equations"
+abstract: "Reference implementation and reproducibility code for the Kannan-stable Picard-Nystrom iteration for discontinuous threshold integral equations of the form u = A u + g + q H(l(u) - c). The repository contains the core 1-D module, the non-separable 2-D extension, fifteen driver scripts that regenerate every table and figure of the companion manuscript, and CC0-licensed real-data CSV extracts derived from Royama et al. (2017)."
+type: software
+version: 1.0.0
+date-released: 2026-04-27
+license: MIT
+url: "https://github.com/davidarizaruiz-VIU/kannan-nystrom-threshold"
+repository-code: "https://github.com/davidarizaruiz-VIU/kannan-nystrom-threshold"
+authors:
+  - family-names: "Ariza-Ruiz"
+    given-names: "David"
+    orcid: "https://orcid.org/0000-0001-8782-7219"
+    affiliation: "Universidad Internacional de Valencia (VIU)"
+keywords:
+  - "fixed-point iteration"
+  - "Kannan mappings"
+  - "Nystrom method"
+  - "Fredholm integral equations of the second kind"
+  - "discontinuous nonlinearity"
+  - "threshold operators"
+  - "Filippov regularisation"
+  - "bistability"
+  - "numerical analysis"
+preferred-citation:
+  type: article
+  title: "Kannan-stable Picard-Nystrom iteration for discontinuous threshold integral equations: theory, computation, and applications"
+  authors:
+    - family-names: "Ariza-Ruiz"
+      given-names: "David"
+      orcid: "https://orcid.org/0000-0001-8782-7219"
+      affiliation: "Universidad Internacional de Valencia (VIU)"
+  journal: "Journal of Computational and Applied Mathematics"
+  year: 2026
+  notes: "Submitted"
